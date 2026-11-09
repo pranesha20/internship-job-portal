@@ -1,0 +1,143 @@
+.tracker-page {
+  min-height: 80vh;
+  padding: 50px 20px;
+  background: #f4f6fb;
+  font-family: Arial, sans-serif;
+}
+
+.tracker-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tracker-icon {
+  font-size: 40px;
+  text-align: center;
+}
+
+.tracker-card h1 {
+  text-align: center;
+  color: #312e81;
+  margin-bottom: 12px;
+}
+
+.tracker-description {
+  text-align: center;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.tracker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.tracker-form label {
+  font-weight: bold;
+}
+
+.tracker-form input {
+  padding: 13px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.tracker-form button {
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tracker-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tracker-message {
+  margin-top: 20px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.tracker-results {
+  margin-top: 30px;
+}
+
+.tracker-result {
+  margin-top: 15px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.tracker-result h3 {
+  color: #312e81;
+  margin-top: 0;
+}
+
+.tracker-result p {
+  line-height: 1.6;
+}
+
+.tracker-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tracker-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.tracker-status.reviewed {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.tracker-status.shortlisted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.tracker-status.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.tracker-note {
+  margin-top: 25px;
+  color: #777777;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .tracker-page {
+    padding: 25px 12px;
+  }
+
+  .tracker-card {
+    padding: 20px;
+  }
+}
